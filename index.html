@@ -3,8 +3,10 @@ layout: default
 tite: why not?
 ---
 Test
-Home - {{ site.time }}
+Generated at: {{ site.time }}
+
     {% for post in paginator.posts %}
-    {{ post.content }} <br>
+      {{ post.content }}
     {% endfor %}
-{{ paginator.total_posts }}
+
+Total posts:{{ paginator.total_posts }}
